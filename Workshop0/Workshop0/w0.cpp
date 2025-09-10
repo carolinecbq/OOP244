@@ -10,7 +10,7 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "#### Workshop Zero ####\n";
-    std::cout << "Subject and Section\n";
+    std::cout << "Subject and Section:\n";
     std::cout << "OOP244\n";
     std::cout << "Name:\n";
     std::cout << "Caroline Chen\n";
