@@ -32,3 +32,9 @@ namespace seneca {
 }
 
 #endif
+//  cstr.h
+//  Workshop1
+//
+//  Created by Caroline Chen on 2025-09-17.
+//
+

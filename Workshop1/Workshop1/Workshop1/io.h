@@ -17,7 +17,7 @@ void print(long long phoneNumber);
 
 void print(const PhoneRec& rec, size_t& rowNumber, const char* filter = nullptr);
 
-bool read(const PhoneRec& rec, FILE* fp);
+bool read(PhoneRec& rec, FILE* fp);
 
 void print(PhoneRec* arrayPointer[], size_t size, const char* filter = nullptr);
 

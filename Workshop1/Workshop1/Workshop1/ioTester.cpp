@@ -37,112 +37,112 @@ void testReadName() {
 
 
 //Uncomment each function separately to test
-//void testReadFile() {
-//   cout << "Testing: bool read(PhoneRec& pr, std::FILE* fptr)" << endl;
-//   std::FILE* file = fopen("phones.tsv", "r");
-//   PhoneRec pr{};
-//   if (file) {
-//      while (read(pr, file)) {
-//         cout << pr.m_name << ", " << pr.m_lastName << ", " << pr.m_phoneNumber << endl;
-//      }
-//      fclose(file);
-//   }
-//   else {
-//      cout << "I could not fine phones.tsv" << endl;
-//   }
-//   cout << "============================\n============================" << endl;
-//}
-
-
-
-//Uncomment each function separately to test
-//void testPrintNumber() {
-//   cout << "Testing: void print(long long)" << endl;
-//   long long N = 9999999999LL;
-//   print(N);
-//   cout << endl;
-//   cout << "============================\n============================" << endl;
-//}
-
-//Uncomment each function separately to test
-//void testPrintPhoneRec() {
-//   cout << "Testing: void print(const PhoneRec&, size_t&, const char* = nullptr)" << endl;
-//   const PhoneRec pr = { "John", "Doe", 4165551234 };
-//   size_t row = 1;
-//   print(pr, row);
-//   print(pr, row, "Jo");
-//   print(pr, row, "Do");
-//   print(pr, row, "oh");
-//   print(pr, row, "oe");
-//   print(pr, row, "jake"); // nothing should be printed
-//   cout << "============================\n============================" << endl;
-//}
-
-
-//Uncomment each function separately to test
-//void testPrintPhonePtrs() {
-//   cout << "Testing:void print(PhoneRec* [], size_t, const char* = nullptr)" << endl;
-//   PhoneRec pr[3] = {
-//      {"John", "Doe", 1231231234},
-//      {"Jane", "Doe", 2342342345},
-//      {"Jake", "Doe", 3453453456}
-//   };
-//   PhoneRec* ptrs[3] = { &pr[2], &pr[1], &pr[0] };
-//   print(ptrs, 3, "ja");
-//   cout << "---------------------------" << endl;
-//   print(ptrs, 3);
-//   cout << "============================\n============================" << endl;
-//}
-
-
-//Uncomment each function separately to test
-//void testSetPointers() {
-//   cout << "Testing:void setPointers(...)" << endl;
-//   PhoneRec pr[3] = {
-//      {"John", "Doe", 1231231234},
-//      {"Jane", "Doe", 2342342345},
-//      {"Jake", "Doe", 3453453456}
-//   };
-//   PhoneRec* ptrs[3];
-//   setPointers(ptrs, pr, 3);
-//   print(ptrs, 3);
-//   cout << "============================\n============================" << endl;
-//}
-
-
-//Uncomment each function separately to test
-//void testSort() {
-//   cout << "Testing:void sort(...)" << endl;
-//   PhoneRec pr[20];
-//   PhoneRec* ptrs[20];
-//   std::FILE* file = fopen("phones.tsv", "r");
-//   for (size_t i = 0; read(pr[i], file); i++);
-//   fclose(file);
-//   setPointers(ptrs, pr, 20);
-//   cout << "Phone Recorded sorty by name: " << endl;
-//   sort(ptrs, 20, false);
-//   print(ptrs, 20);
-//   cout << "============================" << endl;
-//   cout << "Phone Recorded sorty by last name: " << endl;
-//   sort(ptrs, 20, true);
-//   print(ptrs, 20);
-//   cout << "============================\n============================" << endl;
-//}
-
-int main() {
-//   testReadName();
-//   testReadFile();
-//   testPrintNumber();
-//   testPrintPhoneRec();
-//   testPrintPhonePtrs();
-//   testSetPointers();
-//   testSort();
-   return 0;
+void testReadFile() {
+   cout << "Testing: bool read(PhoneRec& pr, std::FILE* fptr)" << endl;
+   std::FILE* file = fopen("phones.tsv", "r");
+   PhoneRec pr{};
+   if (file) {
+      while (read(pr, file)) {
+         cout << pr.firstName << ", " << pr.lastName << ", " << pr.phoneNumber << endl;
+      }
+      fclose(file);
+   }
+   else {
+      cout << "I could not find phones.tsv" << endl;
+   }
+   cout << "============================\n============================" << endl;
 }
 
 
+
+//Uncomment each function separately to test
+void testPrintNumber() {
+   cout << "Testing: void print(long long)" << endl;
+   long long N = 9999999999LL;
+   print(N);
+   cout << endl;
+   cout << "============================\n============================" << endl;
+}
+
+//Uncomment each function separately to test
+void testPrintPhoneRec() {
+   cout << "Testing: void print(const PhoneRec&, size_t&, const char* = nullptr)" << endl;
+   const PhoneRec pr = { "John", "Doe", 4165551234 };
+   size_t row = 1;
+   print(pr, row);
+   print(pr, row, "Jo");
+   print(pr, row, "Do");
+   print(pr, row, "oh");
+   print(pr, row, "oe");
+   print(pr, row, "jake"); // nothing should be printed
+   cout << "============================\n============================" << endl;
+}
+
+
+//Uncomment each function separately to test
+void testPrintPhonePtrs() {
+   cout << "Testing:void print(PhoneRec* [], size_t, const char* = nullptr)" << endl;
+   PhoneRec pr[3] = {
+      {"John", "Doe", 1231231234},
+      {"Jane", "Doe", 2342342345},
+      {"Jake", "Doe", 3453453456}
+   };
+   PhoneRec* ptrs[3] = { &pr[2], &pr[1], &pr[0] };
+   print(ptrs, 3, "ja");
+   cout << "---------------------------" << endl;
+   print(ptrs, 3);
+   cout << "============================\n============================" << endl;
+}
+
+
+//Uncomment each function separately to test
+void testSetPointers() {
+   cout << "Testing:void setPointers(...)" << endl;
+   PhoneRec pr[3] = {
+      {"John", "Doe", 1231231234},
+      {"Jane", "Doe", 2342342345},
+      {"Jake", "Doe", 3453453456}
+   };
+   PhoneRec* ptrs[3];
+   setPointers(ptrs, pr, 3);
+   print(ptrs, 3);
+   cout << "============================\n============================" << endl;
+}
+
+
+//Uncomment each function separately to test
+void testSort() {
+   cout << "Testing:void sort(...)" << endl;
+   PhoneRec pr[20];
+   PhoneRec* ptrs[20];
+   std::FILE* file = fopen("phones.tsv", "r");
+   for (size_t i = 0; read(pr[i], file); i++);
+   fclose(file);
+   setPointers(ptrs, pr, 20);
+   cout << "Phone Recorded sorty by name: " << endl;
+   sort(ptrs, 20, false);
+   print(ptrs, 20);
+   cout << "============================" << endl;
+   cout << "Phone Recorded sorty by last name: " << endl;
+   sort(ptrs, 20, true);
+   print(ptrs, 20);
+   cout << "============================\n============================" << endl;
+}
+
+//int main() {
+////   testReadName();
+////   testReadFile();
+////   testPrintNumber();
+////   testPrintPhoneRec();
+////   testPrintPhonePtrs();
+////   testSetPointers();
+//   testSort();
+//   return 0;
+//}
+
+
 /*
-* 
+*
 * output fo each tester:
 Testing: void read(char*)
 Name
