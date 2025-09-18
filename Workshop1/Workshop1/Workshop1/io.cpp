@@ -5,13 +5,13 @@
 using namespace std; //or add std:: in front of wherever needed
 
 namespace seneca {
-5
+
 void read(char* name){
-    cout << "Name\n ";
+    cout << "Name>\n ";
     cin >> name;
 }
 
-void print(long long phoneNumber){ //1234567890
+void print(long long phoneNumber){ //123456789
     cout << "(";
     cout << phoneNumber / 10000000; //123
     cout << ")";
