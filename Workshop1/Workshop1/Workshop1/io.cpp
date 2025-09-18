@@ -24,7 +24,9 @@ void print(long long phoneNumber){ //1234567890
 
 void print(const PhoneRec& rec, size_t& rowNumber, const char* filter){
     if (filter == nullptr || strstr(rec.firstName, filter) || strstr(rec.lastName, filter)){
-        cout << rowNumber << ": " << rec.firstName << " " << rec.lastName << " " << rec.phoneNumber << endl;
+        cout << rowNumber << ": " << rec.firstName << " " << rec.lastName << " ";
+        print(rec.phoneNumber);
+        cout << endl;
         rowNumber++;
     }
 }
