@@ -7,7 +7,7 @@ using namespace std; //or add std:: in front of wherever needed
 namespace seneca {
 
 void read(char* name){
-    cout << "Name>\n ";
+    cout << "Name\n ";
     cin >> name;
 }
 
