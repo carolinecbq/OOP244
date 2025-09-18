@@ -5,9 +5,9 @@
 using namespace std; //or add std:: in front of wherever needed
 
 namespace seneca {
-
+5
 void read(char* name){
-    cout << "Name>\n ";
+    cout << "Name\n ";
     cin >> name;
 }
 
