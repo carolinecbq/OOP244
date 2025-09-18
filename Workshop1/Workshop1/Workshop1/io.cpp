@@ -27,7 +27,6 @@ void print(const PhoneRec& rec, size_t& rowNumber, const char* filter){
         cout << rowNumber << ": " << rec.firstName << " " << rec.lastName << " ";
         print(rec.phoneNumber);
         cout << endl;
-        rowNumber++;
     }
 }
 
@@ -42,7 +41,7 @@ void print(PhoneRec* arrayPointer[], size_t size, const char* filter){
     for(size_t i = 0; i < size; i++){
         if (arrayPointer[i]) {
             print(*arrayPointer[i], rowNumber, filter);
-            ++rowNumber;
+            rowNumber++;
         }
     }
 }
