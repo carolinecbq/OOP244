@@ -41,18 +41,20 @@ void add(Samples& S, const int data[], int size) {
         S.m_size = size;
     } else {
         append(S.m_data, S.m_size, data, size);
+        S.m_size += size;
     }
 }
 
 void append(int*& data, int size, const int appendedData[], int dataSize) {
-    int* newSize = new int[size + dataSize];
+    int* newData = new int[size + dataSize];
     for (int i = 0; i < size; i++) {
-        newSize[i] = data[i];
-        newSize[size + 1] = appendedData[i];
+        newData[i] = data[i];
+    }
+    for (int j = 0; j < dataSize; j++) {
+        newData[size + j] = appendedData[j];
     }
     delete[] data;
-    data = newSize;
-
+    data = newData;
 }
 
 void freemem(Samples*& s) {
