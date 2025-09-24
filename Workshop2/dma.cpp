@@ -16,13 +16,15 @@ that my professor provided to complete my work for function whatever.
 
 #include <iostream>
 #include "dma.h"
+#include "cstr.h"
+using namespace seneca;
 
 Samples* CreateSamples(const char* title) {
     Samples* s = new Samples;
-    size_t length = strlen(title) + 1;
+    size_t length = seneca::strlen(title) + 1;
     s->m_title = new char[length];
 
-    strcpy(s->m_title, title);
+    seneca::strcpy(s->m_title, title);
 
     s->m_data = nullptr;
     s->m_size = 0;
@@ -68,7 +70,7 @@ void testCreateSamples() {
     const char title[] = "Test Data Set";
     Samples* s = CreateSamples(title);
 
-    bool ok = s && s->m_title && strcmp(s->m_title, title) == 0
+    bool ok = s && s->m_title && seneca::strcmp(s->m_title, title) == 0
               && s->m_data == nullptr && s->m_size == 0;
 
     std::cout << (ok ? "PASS" : "FAIL") << std::endl;
@@ -124,7 +126,7 @@ void testFreemem() {
 
     Samples* s = new Samples;
     s->m_title = new char[6];
-    strcpy(s->m_title, "Hello");
+    seneca::strcpy(s->m_title, "Hello");
 
     s->m_data = new int[3]{1, 2, 3};
     s->m_size = 3;
