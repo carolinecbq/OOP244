@@ -22,7 +22,7 @@
 
 using namespace seneca;
 using namespace std;
-const int CHUNK_SIZE = 50;
+const int CHUNK_SIZE = 4989;
 
 /// <summary>
 /// Reads a sensor data file and loads readings into a dynamically allocated Samples structure.
