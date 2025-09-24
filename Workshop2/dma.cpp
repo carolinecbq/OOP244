@@ -15,7 +15,6 @@ that my professor provided to complete my work for function whatever.
 */
 
 #include <iostream>
-#include "cstr.cpp"
 #include "dma.h"
 
 Samples* CreateSamples(const char* title) {
