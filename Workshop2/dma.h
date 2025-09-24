@@ -1,7 +1,21 @@
 //
 // Created by Caroline Chen on 2025-09-23.
 //
-
+/* Citation and Sources...
+-----------------------------------------------------------
+Workshop 2
+Module: dma
+Filename: dma.h
+-----------------------------------------------------------
+Author: Caroline Chen
+Student number: 112747241
+Email: cchen247@myseneca.ca
+Subject: OOP244 NRA
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work for function whatever.
+-----------------------------------------------------------
+*/
 #ifndef WORKSHOP2_DMA_H
 #define WORKSHOP2_DMA_H
 

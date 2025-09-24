@@ -1,4 +1,21 @@
+/* Citation and Sources...
+-----------------------------------------------------------
+Workshop 2
+Module: dma
+Filename: dma.cpp
+-----------------------------------------------------------
+Author: Caroline Chen
+Student number: 112747241
+Email: cchen247@myseneca.ca
+Subject: OOP244 NRA
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work for function whatever.
+-----------------------------------------------------------
+*/
+
 #include <iostream>
+#include "cstr.cpp"
 #include "dma.h"
 
 Samples* CreateSamples(const char* title) {
