@@ -63,3 +63,14 @@ Debug/
 *.exe
 *.out
 *.app
+
+# CLion
+.idea/
+
+# VSCode
+.vscode
+
+# Macbook Stuff
+.DS_Store
+
+
