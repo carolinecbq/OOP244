@@ -13,7 +13,27 @@
 // Name            Date            Reason
 //
 /////////////////////////////////////////////////////////////////
+
 ***********************************************************************/
+/* Citation and Sources...
+-----------------------------------------------------------
+Workshop 4
+Module: Account
+Filename: Account.h
+-----------------------------------------------------------
+Author: Caroline Chen
+Student number: 122747241
+Email: cchen247@myseneca.ca
+Subject: OOP244NRA
+-----------------------------------------------------------
+Revision History
+------- --------- ------------------------------------------
+
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work for function whatever.
+-----------------------------------------------------------
+*/
 #ifndef SENECA_ACCOUNT_H_
 #define SENECA_ACCOUNT_H_
 #include <iostream>

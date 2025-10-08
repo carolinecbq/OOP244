@@ -15,6 +15,25 @@
 //
 /////////////////////////////////////////////////////////////////
 ***********************************************************************/
+/* Citation and Sources...
+-----------------------------------------------------------
+Workshop 4
+Module: Account
+Filename: Account.cpp
+-----------------------------------------------------------
+Author: Caroline Chen
+Student number: 122747241
+Email: cchen247@myseneca.ca
+Subject: OOP244NRA
+-----------------------------------------------------------
+Revision History
+------- --------- ------------------------------------------
+
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work for function whatever.
+-----------------------------------------------------------
+*/
 
 #include <iostream>
 #include "Account.h"
