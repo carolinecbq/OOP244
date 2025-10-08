@@ -1,3 +1,19 @@
+/* Citation and Sources...
+-----------------------------------------------------------
+Workshop 3
+Module: CC
+Filename: CC.h
+-----------------------------------------------------------
+Author: Caroline Chen
+Student number: 112747241
+Email: cchen247@myseneca.ca
+Subject: OOP244NRA
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work for function whatever.
+-----------------------------------------------------------
+*/
+
 #ifndef SENECA_CC_H_
 #define SENECA_CC_H_
 #include <iostream>
@@ -19,7 +35,7 @@ namespace seneca {
         void set(const char* cc_name, unsigned long long cc_number, short cvv, short expYear, short expMonth);
         void display() const;
         CC();
-        CC(const char* cc_name, unsigned long long cc_number, short cvv, short expYear, short expMonth);
+        CC(const char* cc_name, unsigned long long cc_number, short cvv, short expYear = 26, short expMonth = 12);
         ~CC();
 
 

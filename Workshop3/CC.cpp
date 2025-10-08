@@ -1,3 +1,19 @@
+/* Citation and Sources...
+-----------------------------------------------------------
+Workshop 3
+Module: CC
+Filename: CC.cpp
+-----------------------------------------------------------
+Author: Caroline Chen
+Student number: 112747241
+Email: cchen247@myseneca.ca
+Subject: OOP244NRA
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work for function whatever.
+-----------------------------------------------------------
+*/
+
 #include <iostream>
 #include "cstr.h"
 #include "CC.h"
@@ -115,7 +131,7 @@ namespace seneca {
 
     void CC::display() const {
         if (cardHolderName == nullptr) {
-            cout << "Invalid Credit Card Record\n" << endl;
+            cout << "Invalid Credit Card Record" << endl;
         } else {
             display(cardHolderName, cardNumber, expYear, expMonth, cvv);
         }
