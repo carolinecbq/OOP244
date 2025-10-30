@@ -24,7 +24,7 @@ Student number: 112747241
 Email: cchen247@myseneca.ca
 Subject: OOP244NRA
 -----------------------------------------------------------
-I have done all the coding by myself and only copied the code 
+I have done all the coding by myself and only copied the code
 that my professor provided to complete my work for function whatever.
 -----------------------------------------------------------
 */

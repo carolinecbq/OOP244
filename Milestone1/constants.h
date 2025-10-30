@@ -1,0 +1,8 @@
+//
+// Created by carol on 2025-10-30.
+//
+
+#ifndef MILESTONE1_CONSTANTS_H
+#define MILESTONE1_CONSTANTS_H
+
+#endif //MILESTONE1_CONSTANTS_H
