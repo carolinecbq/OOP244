@@ -5,4 +5,6 @@
 #ifndef MILESTONE1_CONSTANTS_H
 #define MILESTONE1_CONSTANTS_H
 
+unsigned int MaximumNumberOfMenuItems = 20;
+
 #endif //MILESTONE1_CONSTANTS_H
