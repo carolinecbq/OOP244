@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(Milestone1 main.cpp
         constants.h
         Menu.cpp
-        Menu.h)
+        Menu.h
+        Utils.h
+        Utils.cpp)
