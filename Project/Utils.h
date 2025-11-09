@@ -12,6 +12,19 @@
 //
 /////////////////////////////////////////////////////////////////
 ***********************************************************************/
+/* Citation and Sources...
+Final Project Milestone 2:
+Module: Utils
+Filename: Utils.h
+Version 1.0
+Author: Caroline Chen, StNo: 112747241, Email: cchen247@myseneca.ca
+Revision History
+-----------------------------------------------------------
+Date      Reason
+2025/11/09 Added Milestone 2 functions
+-----------------------------------------------------------
+Citation to indicate that you have done all the work yourself
+-----------------------------------------------------------*/
 #ifndef SENECA_UTILS_H
 #define SENECA_UTILS_H
 namespace seneca {

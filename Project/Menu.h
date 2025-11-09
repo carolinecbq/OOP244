@@ -2,7 +2,7 @@
 // Created by carol on 2025-10-30.
 //
 /* Citation and Sources...
-Final Project Milestone 1:
+Final Project Milestone 2:
 Module: Menu
 Filename: Menu.h
 Version 1.0
@@ -11,6 +11,7 @@ Revision History
 -----------------------------------------------------------
 Date      Reason
 2025/10/31  Forgot the & symbol in the ostream display function and the default cout
+2025/11/09 Added Milestone 2 functions
 -----------------------------------------------------------
 Citation to indicate that you have done all the work yourself
 -----------------------------------------------------------*/
