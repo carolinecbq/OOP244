@@ -52,9 +52,7 @@ namespace seneca {
     }
 
     ostream& seneca::MenuItem::display(ostream& ostr) const {
-        if (m_content == nullptr || m_content[0] == '\0') {
-            ostr << "??????????";
-        } else {
+        if (m_content != nullptr && m_content[0] != '\0') {
             for (unsigned int i = 0; i < indents * indentSize; i++) {
                 ostr << " ";
             }
@@ -108,20 +106,22 @@ namespace seneca {
     }
 
     size_t Menu::select() const {
-        title.display(cout);
-        cout << endl;
+        title.display();
+        if (title.m_content != nullptr && title.m_content[0] != '\0') {
+            cout << endl;
+        }
 
         for (unsigned int i = 0; i < itemCount; ++i) {
             if (items[i] != nullptr) {
-                items[i]->display(cout);
+                items[i]->display();
                 cout << endl;
             }
         }
 
-        exitOption.display(cout);
+        exitOption.display();
         cout << endl;
 
-        entryPrompt.display(cout);
+        entryPrompt.display();
 
         size_t selection = Utils::getInt(0,itemCount);
 
