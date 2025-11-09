@@ -18,14 +18,18 @@ Citation to indicate that you have done all the work yourself
 #define MILESTONE1_MENU_H
 #include <iostream>
 #include <iomanip>
+#include "constants.h"
 using namespace std;
 namespace seneca {
+
+    class Menu;
+
     class MenuItem {
         char* m_content{};
         unsigned int indents{};
         unsigned int indentSize{};
         int rowNum{};
-    public:
+
         MenuItem();
         MenuItem(const char* content, unsigned int indentations, unsigned int indent_size, int rowValue);
         ~MenuItem();
@@ -36,7 +40,39 @@ namespace seneca {
         MenuItem& operator=(const MenuItem&) = delete;
 
         operator bool() const;
+
+        friend class Menu;
     };
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    class Menu {
+        unsigned int indents{};
+        unsigned int indentSize{};
+        unsigned int itemCount{};
+
+        MenuItem title;
+        MenuItem exitOption;
+        MenuItem entryPrompt;
+
+        MenuItem* items[MaximumNumberOfMenuItems]{};
+
+    public:
+        Menu(const char* title, const char* exitOption = "Exit", unsigned int indents = 0, unsigned int indentSize = 3);
+        ~Menu();
+
+        Menu& operator<<(const char* m_content);
+
+        Menu(const Menu&) = delete;
+        Menu& operator=(const Menu&) = delete;
+
+        size_t select() const;
+
+        friend size_t operator<<(ostream& ostr, const Menu& m);
+
+    };
+
+
 
 }
 #endif //MILESTONE1_MENU_H

@@ -14,6 +14,7 @@
 ***********************************************************************/
 #include <iostream>
 #include "Utils.h"
+#include <limits>
 using namespace std;
 namespace seneca {
    Utils ut;
@@ -54,5 +55,48 @@ namespace seneca {
       }
       return cstring && *cstring == 0;
    }
+
+   int Utils::getInt() {
+      int value = 0;
+      bool validity = false;
+
+      while (!validity) {
+         if (!(cin >> value)) {
+            cout << "Invalid integer: ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+         }
+         else {
+            char character;
+            cin.get(character);
+
+            if (character != '\n') {
+               cout << "Only an integer please: ";
+               cin.clear();
+               cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            }
+            else {
+               validity = true;
+            }
+         }
+      }
+      return value;
+   }
+
+
+
+   int Utils::getInt(int min, int max) {
+      int value = 0;
+
+
+      value = getInt();
+
+      if (value < min || value > max) {
+         cout << "Invalid value: [" << min << " <= value <= " << max << "], try again: ";
+      }
+
+      return value;
+   }
+
 
 }
