@@ -68,7 +68,7 @@ namespace seneca {
         cout << "          3- Larg\n";
         cout << "          4- Extra Large\n";
         cout << "          0- Back\n";
-        cout << "          > ";
+        cout << "         > ";
 
         int selection{};
         cin >> selection;

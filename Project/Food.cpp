@@ -88,11 +88,11 @@ namespace seneca {
     }
 
     bool Food::order() {
-        cout << "          Food Size Selection\n";
-        cout << "           1- Adult\n";
-        cout << "           2- Child\n";
-        cout << "           0- Back\n";
-        cout << "           > ";
+        cout << "         Food Size Selection\n";
+        cout << "          1- Adult\n";
+        cout << "          2- Child\n";
+        cout << "          0- Back\n";
+        cout << "         > ";
 
         int selection{};
         cin >> selection;
