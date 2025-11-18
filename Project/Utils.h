@@ -38,6 +38,7 @@ namespace seneca {
       bool isspace(const char* cstring)const;
        static int getInt();
        static int getInt(int min, int max);
+       const char* getName() const;
    };
    extern Utils ut;   // makes the ut object available where Utils.h is included
                      // to call a Utils function call it as follows

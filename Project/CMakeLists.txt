@@ -3,9 +3,16 @@ project(Milestone1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Milestone1 ms2.cpp
+add_executable(Milestone1
         constants.h
         Menu.cpp
         Menu.h
         Utils.h
-        Utils.cpp)
+        Utils.cpp
+        ms3.cpp
+        Drink.cpp
+        Drink.h
+        Food.cpp
+        Food.h
+        Billable.cpp
+        Billable.h)

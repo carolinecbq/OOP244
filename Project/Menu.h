@@ -15,10 +15,9 @@ Date      Reason
 -----------------------------------------------------------
 Citation to indicate that you have done all the work yourself
 -----------------------------------------------------------*/
-#ifndef MILESTONE1_MENU_H
-#define MILESTONE1_MENU_H
+#ifndef MENU_H
+#define MENU_H
 #include <iostream>
-#include <iomanip>
 #include "constants.h"
 using namespace std;
 namespace seneca {
@@ -74,6 +73,5 @@ namespace seneca {
     };
 
 
-
 }
-#endif //MILESTONE1_MENU_H
+#endif //MENU_H

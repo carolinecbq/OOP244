@@ -110,6 +110,4 @@ namespace seneca {
 
       return value;
    }
-
-
 }

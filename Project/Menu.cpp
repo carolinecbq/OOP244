@@ -18,6 +18,7 @@ Citation to indicate that you have done all the work yourself
 -----------------------------------------------------------*/
 #include <iostream>
 #include <iomanip>
+#include <fstream>
 #include "Menu.h"
 #include <cstring>
 #include "constants.h"
@@ -135,5 +136,6 @@ namespace seneca {
             return 0;
         }
     }
+
 
 }
