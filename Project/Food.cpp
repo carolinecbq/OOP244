@@ -37,7 +37,7 @@ namespace seneca {
         if (src.m_customize != nullptr) {
             m_customize = new char[strlen(src.m_customize) + 1];
 
-            for (size_t i = 0; i < strlen(src.m_customize); i++) {
+            for (size_t i = 0; i <= strlen(src.m_customize); i++) {
                 m_customize[i] = src.m_customize[i];
             }
         } else {
@@ -80,7 +80,7 @@ namespace seneca {
 
         if (m_customize != nullptr && &ostr == &cout) {
             ostr << " >> ";
-            for (int i = 0; i < 30 && m_customize[i] != '\0'; i++) {
+            for (size_t i = 0; i < 30 && m_customize[i] != '\0'; i++) {
                 ostr << m_customize[i];
             }
         }
