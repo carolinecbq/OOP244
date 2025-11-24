@@ -1,10 +1,12 @@
-//
-// Created by carol on 2025-10-30.
-//
+#ifndef SENECA_CONSTANTS_H
+#define SENECA_CONSTANTS_H
+#include <cstddef>
 
-#ifndef MILESTONE1_CONSTANTS_H
-#define MILESTONE1_CONSTANTS_H
 
-const unsigned int MaximumNumberOfMenuItems = 20;
+namespace seneca {
+    const size_t MaximumNumberOfMenuItems = 20u;
+    const double Tax = 0.13;
+    const size_t MaximumNumberOfBillItems = 20u;
+}
 
-#endif //MILESTONE1_CONSTANTS_H
+#endif // !SENECA_CONSTANTS_H

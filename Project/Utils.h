@@ -39,6 +39,7 @@ namespace seneca {
        static int getInt();
        static int getInt(int min, int max);
        const char* getName() const;
+       char* makeBillFileName(char* filename, size_t billNo) const;
    };
    extern Utils ut;   // makes the ut object available where Utils.h is included
                      // to call a Utils function call it as follows
