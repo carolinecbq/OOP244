@@ -1,0 +1,5 @@
+This workshop was definitely one of the shorter and easier ones to date, perhaps partially because we've gotten a decent amount of practice with previous workshops and also the curent project, but I didn't run into too many issues at all.
+I did, however, learn a little more and gain a better understanding for overshadowing virtual functions from a base class, as well as when calling the base class first within the rule of three is required.
+My first run didn't work because I had forgotten to add : Marks(src) to the copy constructor and the copy assignment overload. Another thing that I've found myself stuck on during debugging the last few times and I have now finally remembered this time around,
+is the fact that for the for loops within the copy constructor and copy assignment functions, it needs to be a <= size not < size due to it leaving out the null terminator during the copy when it's only "<" and not "<=".
+Overall, this workshop was fairly straightforward and easy way to help with further understanding the relationship between base and derived classes, as well as how shadowing in virtual functions work.
