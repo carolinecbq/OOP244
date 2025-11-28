@@ -31,9 +31,7 @@ namespace seneca {
 
         if (src.studentName != nullptr) {
             studentName = new char[strlen(src.studentName) + 1];
-            for (size_t i = 0; i < strlen(src.studentName); i++) {
-                studentName[i] = src.studentName[i];
-            }
+             strcpy(studentName, src.studentName);
         } else {
             studentName = nullptr;
         }
