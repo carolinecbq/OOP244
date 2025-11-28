@@ -9,7 +9,6 @@ add_executable(Project
         Menu.h
         Utils.h
         Utils.cpp
-        ms4.cpp
         Drink.cpp
         Drink.h
         Food.cpp
@@ -17,4 +16,5 @@ add_executable(Project
         Billable.cpp
         Billable.h
         Ordering.cpp
-        Ordering.h)
+        Ordering.h
+        main.cpp)

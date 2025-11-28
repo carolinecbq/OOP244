@@ -8,6 +8,5 @@ add_executable(Workshop9 main.cpp
         Utils.h
         Transcript.cpp
         Transcript.h
-        MarksTest.cpp
         Utils.cpp
         Marks.cpp)
