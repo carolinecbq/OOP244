@@ -17,4 +17,4 @@ add_executable(Project
         Billable.h
         Ordering.cpp
         Ordering.h
-        main.cpp)
+        ms56.cpp)
