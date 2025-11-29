@@ -22,12 +22,14 @@ Revision History
 -----------------------------------------------------------
 Date      Reason
 2025/11/09 Added Milestone 2 functions
+2025/11/29 Added <sstream> in order to utilize string data type and string stream to fix output issues with MS56
 -----------------------------------------------------------
 Citation to indicate that you have done all the work yourself
 -----------------------------------------------------------*/
 #include <iostream>
 #include "Utils.h"
 #include <limits>
+#include <sstream>
 using namespace std;
 namespace seneca {
    Utils ut;
@@ -71,27 +73,30 @@ namespace seneca {
 
    int Utils::getInt() {
       int value = 0;
-      bool validity = false;
+      bool valid = false;
+      string line;
 
-      while (!validity) {
-         if (!(cin >> value)) {
+      while (!valid) {
+         getline(cin, line);
+         if (line.empty()) {
+            cout << "You must enter a value: ";
+            continue;
+         }
+
+         stringstream sLine(line);
+
+         if (!(sLine >> value)) {
             cout << "Invalid integer: ";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
          }
-         else {
-            char character;
-            cin.get(character);
 
-            if (character != '\n') {
-               cout << "Only an integer please: ";
-               cin.clear();
-               cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            }
-            else {
-               validity = true;
-            }
+         char character;
+         if (sLine >> character) {
+            cout << "Only an integer please: ";
+            continue;
          }
+
+         valid = true;
       }
       return value;
    }
@@ -100,12 +105,16 @@ namespace seneca {
 
    int Utils::getInt(int min, int max) {
       int value = 0;
+      bool valid = false;
 
+      while (!valid) {
+         value = getInt();
 
-      value = getInt();
-
-      if (value < min || value > max) {
-         cout << "Invalid value: [" << min << " <= value <= " << max << "], try again: ";
+         if (value < min || value > max) {
+            cout << "Invalid value: [" << min << "<= value <=" << max << "], try again: ";
+         } else {
+            valid = true;
+         }
       }
 
       return value;

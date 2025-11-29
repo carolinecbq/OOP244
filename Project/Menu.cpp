@@ -84,13 +84,13 @@ namespace seneca {
     entryPrompt("> ", indents, indentSize, -1)
 
     {
-        for (unsigned int i = 0; i < MaximumNumberOfMenuItems; ++i) {
+        for (unsigned int i = 0; i < MaximumNumberOfMenuItems; i++) {
             items[i] = nullptr;
         }
     }
 
     Menu::~Menu() {
-        for (unsigned int i = 0; i < MaximumNumberOfMenuItems; ++i) {
+        for (unsigned int i = 0; i < MaximumNumberOfMenuItems; i++) {
             if (items[i] != nullptr) {
                 delete items[i];
                 items[i] = nullptr;
@@ -112,7 +112,7 @@ namespace seneca {
             cout << endl;
         }
 
-        for (unsigned int i = 0; i < itemCount; ++i) {
+        for (unsigned int i = 0; i < itemCount; i++) {
             if (items[i] != nullptr) {
                 items[i]->display();
                 cout << endl;
