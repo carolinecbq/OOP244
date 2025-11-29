@@ -28,9 +28,9 @@ namespace seneca {
 
     void Ordering::printTotals(ostream& ostr, double totalAmount) const {
         ostr << fixed << setprecision(2);
-        ostr << "                     Total:         " << totalAmount << endl;
+        ostr << "                     Total:        " << totalAmount << endl;
         ostr << "                     Tax:           " << totalAmount * Tax << endl;
-        ostr << "                     Total+Tax:     " << totalAmount + totalAmount * Tax << endl;
+        ostr << "                     Total+Tax:    " << totalAmount + totalAmount * Tax << endl;
         ostr << "========================================" << endl;
     }
 
